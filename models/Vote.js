@@ -12,5 +12,12 @@ module.exports = (sequelize) => {
       allowNull: false,
       validate: { isIn: [[-1, 1]] }
     },
+  }, {
+    indexes: [
+      {
+        unique: true,
+        fields: ['userId', 'answerId']
+      }
+    ]
   });
 };
