@@ -2,9 +2,11 @@
   "name": "edu-blog-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.10"
   }
 }
